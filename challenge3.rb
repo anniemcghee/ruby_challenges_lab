@@ -25,16 +25,3 @@ for i in (0..length-1)
 end
 
 puts "Your reversed string: #{array.join}"
-
-# def reverse_input string
-# 	array = []
-# 	counter = 0
-# 	while counter < string.length
-# 		letter = string.pop
-# 		array.unshift letter
-# 		counter += 1
-# 	end
-# 	puts array
-# end
-
-# reverse_input input
