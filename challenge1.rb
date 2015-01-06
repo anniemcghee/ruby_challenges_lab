@@ -24,7 +24,7 @@ if type == 1
 elsif type == 2
 	print "Enter Fahrenheit temperature: "
 	f_temp = gets.chomp.to_i
-	f_result = f_temp - 32 * 5 / 9
+	f_result = (f_temp - 32) * 5 / 9
 
 	puts "#{f_temp} degrees Fahrenheit is equal to #{f_result} degrees Celsius."
 else

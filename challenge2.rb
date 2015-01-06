@@ -21,40 +21,29 @@ print "Would you like to ADD, SUBTRACT, MULTIPLY or DIVIDE? "
 
 calc = gets.chomp.downcase
 
-if calc == "add"
-	print "Enter your first number: "
-	first_num = gets.chomp.to_i
-	print "Enter your second number: "
-	second_num = gets.chomp.to_i
+print "Enter your first number: "
 
-	result = first_num + second_num
+first_num = gets.chomp.to_i
 
-	puts "Your result is #{result}!"
-elsif calc == "subtract"
-	print "Enter your first number: "
-	first_num = gets.chomp.to_i
-	print "Enter your second number: "
-	second_num = gets.chomp.to_i
+print "Enter your second number: "
 
-	result = first_num - second_num
+second_num = gets.chomp.to_i
 
-	puts "Your result is #{result}!"
-elsif calc == "multiply"
-	print "Enter your first number: "
-	first_num = gets.chomp.to_i
-	print "Enter your second number: "
-	second_num = gets.chomp.to_i
+case calc
 
-	result = first_num * second_num
+	when "add"
+	puts "Your result is #{first_num + second_num}"
 
-	puts "Your result is #{result}!"
-elsif calc == "divide"
-	print "Enter your first number: "
-	first_num = gets.chomp.to_i
-	print "Enter your second number: "
-	second_num = gets.chomp.to_i
+	when "subtract"
+	puts "Your result is #{first_num - second_num}"
 
-	result = first_num / second_num
+	when "multiply"
+	puts "Your result is #{first_num * second_num}"
 
-	puts "Your result is #{result}!"
+	when "divide"
+	puts "Your result is #{first_num / second_num}" 
+
+	else
+	puts "Please try again!"
+
 end

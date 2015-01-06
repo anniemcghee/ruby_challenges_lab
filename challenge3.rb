@@ -20,8 +20,8 @@ input = gets.chomp.split("")
 length = input.length
 array = []
 
-for i in (0..length-1)
-	array.push(input[length-i-1])
+for i in (0..length)
+	array.push(input[length-i])
 end
 
-puts "Your reversed string: #{array.join}"
+puts "Your reversed string: #{array.join}."
